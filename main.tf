@@ -15,4 +15,5 @@ resource "aws_ssm_parameter" "satyajeet_gitops_param" {
   name  = "/satyajeet/gitops/deployed"
   type  = "String"
   value = "Infrastructure updated successfully"
+  overwrite = true
 }
